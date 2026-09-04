@@ -3,8 +3,10 @@ import Productos from "../models/Productos";
 
 const router = Router();
 
-router.get('/', (req,res) => {
-    res.render("index");
+router.get('/', async(req,res) => {
+    const productos = await Productos.find().lean();
+    console.log(productos);
+    res.render("index", {productos: productos});
 });
 
 router.get('/update', (req,res) => {

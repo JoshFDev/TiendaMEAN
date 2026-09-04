@@ -1,0 +1,16 @@
+<div class="container mt-5" style="max-width: 500px;">
+    <h2 class="mb-4 text-center">Agregar producto</h2>
+    <ul>
+        {{#each productos}}
+        <li>{{name}}</li>
+        <p>
+            {{description}}
+        </p>
+        <p>
+            {{price}}
+        </p>
+        <button>Actualizar</button> 
+        <button>Eliminar</button>
+        {{/each}}
+    </ul>
+</div>

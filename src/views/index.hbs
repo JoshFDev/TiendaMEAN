@@ -1,18 +1,5 @@
 <div class="container mt-5" style="max-width: 500px;">
     <h2 class="mb-4 text-center">Agregar producto</h2>
-    <form action="/productos/agregar" method="post">
-        <div class="mb-3">
-            <label for="name" class="form-label">Nombre</label>
-            <input type="text" name="name" class="form-control" id="name" placeholder="Nombre" required>
-        </div>
-        <div class="mb-3">
-            <label for="description" class="form-label">Descripción</label>
-            <textarea name="description" class="form-control" id="description" rows="4" placeholder="Descripción" required></textarea>
-        </div>
-        <div class="mb-3">
-            <label for="price" class="form-label">Precio</label>
-            <input type="number" step="0.01" name="price" class="form-control" id="price" placeholder="0.00" required>
-        </div>
-        <button type="submit" class="btn btn-primary w-100">Guardar</button>
-    </form>
+{{>Products/productForm}}
+{{>Products/productTable}}
 </div>
