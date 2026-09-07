@@ -16,7 +16,7 @@ const productoEsquema = new Schema(
             type: String,
             required: true
         },
-        option: {
+        status: {
             type: Boolean,
             default: false
         },

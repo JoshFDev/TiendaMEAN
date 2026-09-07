@@ -18,6 +18,7 @@ app.engine(
 //middleware
 app.use(morgan('dev'));
 app.use(express.urlencoded({extended: false}));
+app.use(express.static(path.join(__dirname, "frontend")));
 
 //rutas
 app.set("view engine", ".hbs");

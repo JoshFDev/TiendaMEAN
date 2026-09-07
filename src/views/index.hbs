@@ -1,5 +1,16 @@
-<div class="container mt-5" style="max-width: 500px;">
-    <h2 class="mb-4 text-center">Agregar producto</h2>
-{{>Products/productForm}}
-{{>Products/productTable}}
+<div class="container mt-4">
+    <div class="row g-4">
+        <div class="col-lg-4">
+            <div class="card">
+                <div class="card-header bg-primary text-white">Agregar producto</div>
+                <div class="card-body">{{>Products/productForm}}</div>
+            </div>
+        </div>
+        <div class="col-lg-8">
+            <div class="card">
+                <div class="card-header bg-dark text-white">Inventario <span class="badge bg-light text-dark">{{productos.length}}</span></div>
+                <div class="card-body p-0">{{>Products/productTable}}</div>
+            </div>
+        </div>
+    </div>
 </div>
