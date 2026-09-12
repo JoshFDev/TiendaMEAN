@@ -1,6 +1,9 @@
+import dns from "dns";
 import { connect } from "mongoose";
 
 import { MONGODB_URI } from "./config";
+
+dns.setServers(["8.8.8.8", "1.1.1.1"]);
 
 console.log(
     "MONGODB_URI:",
